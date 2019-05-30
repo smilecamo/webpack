@@ -8,5 +8,6 @@
 ` npm info webpack`
 4. 安装指定版本
 ` npm install webpack@4.25.0 -D`
-
+### webpack配置
+1. 项目目录下新建文件,文件命名 ` webpack.config.js`
 
