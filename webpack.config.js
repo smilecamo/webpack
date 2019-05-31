@@ -16,5 +16,24 @@ module.exports={
     // path.resolve()
     // __dirname代表当前文件所在目录
     path:path.resolve(__dirname,'dist')
+  },
+  // 如果webpack默认规则不能打包,就会使用这里得规则
+  module:{
+    // 规则
+    rules:[
+      {
+        // 以什么后缀结尾
+        test:/\.(png|jpg|gif)$/,
+        // 使用什么loader
+        use:[
+          {
+            // loader 得名称
+            loader: 'file-loader',
+            // 设置
+            options: {}
+          }
+        ]
+      }
+    ]
   }
 }
