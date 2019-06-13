@@ -1,0 +1,6 @@
+.list{
+  color: red,
+}
+.item:nth-of-type(odd){
+  background: rebeccapurple;
+}
